@@ -487,7 +487,7 @@ button:active, button:focus {
     justify-content: center;    
 }
 
-.portfolio__li:not(:last-child) {
+.portfolio__item:not(:last-child) {
     margin-right: 8px;   
 }
 
@@ -586,7 +586,7 @@ button:active, button:focus {
     max-width: 370px;   
 } 
 
-.working__section {
+.working__box {
     padding: 20px 24px;
 }
 .container .working {
