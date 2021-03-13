@@ -140,7 +140,7 @@
 
 /* HERO*/
 
-h1 {
+.hero__diacription {
     text-transform: uppercase;
     font-style: normal;
     font-weight: 900;
@@ -197,7 +197,7 @@ button:active, button:focus {
 
 /*ADVANTAGES*/
 
-.plus__box {
+.features__box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,19 +211,19 @@ button:active, button:focus {
     padding-top: 30px;
 } */
 
-.plus {
+.features {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.plus__list {
+.features__list {
     display: flex;
 }
 
-.plus__item:not(:last-child) {
+.features__item:not(:last-child) {
     margin-right: 30px;
 }
-.plus__title {
+.features__title {
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
@@ -234,7 +234,7 @@ button:active, button:focus {
     margin-bottom: 10px;
 }
 
-.plus__description {
+.features__description {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -246,11 +246,11 @@ button:active, button:focus {
 
 /*MAKE*/
 
-.make {
+.specialization {
     padding-bottom: 94px;
 }
 
-.make__title {
+.specialization__title {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -262,18 +262,18 @@ button:active, button:focus {
     margin-bottom: 50px;
 }
 
-.make__list {
+.specialization__list {
     display: flex;
 }
 
-.make__list li:not(:last-child) {
+.specialization__list li:not(:last-child) {
     margin-right: 30px;
 }
 
-.make__thumb {
+.specialization__thumb {
     position: relative;
 }
-.make__description {
+.specialization__description {
     position: absolute;
     width: 100%;
     left: 0;
@@ -282,7 +282,7 @@ button:active, button:focus {
     padding: 27px 82px;
 }
 
-.make__description h3 {
+.specialization__description h3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -316,6 +316,7 @@ button:active, button:focus {
     background: var(--white-text);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    // margin-bottom: 30px;
    
 }
 
@@ -324,13 +325,10 @@ button:active, button:focus {
     
 }
 
-.team__teamboxing:not(:last-child) {
+.team__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.team__teamboxing {
-    margin-bottom: 30px;
-}
 
 .team__container {
     padding-top: 30px;
@@ -456,12 +454,15 @@ button:active, button:focus {
 
 .clients__list {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 }
 
 .clients__item {
-    width: calc((100% - 30px * 5) / 6);
+    // width: calc((100% - 30px * 5) / 6);
+    flex-basis: 170px;
+    max-width: 170px;
   }
+
 .clients__item:not(:last-child) {
     margin-right: 30px;
   }
